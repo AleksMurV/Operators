@@ -1,11 +1,11 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
 //#define TEMPERATURE
 //#define TARGET
 //#define CALC_1
-//define - определить
-//definition - определение
+//define - РѕРїСЂРµРґРµР»РёС‚СЊ
+//definition - РѕРїСЂРµРґРµР»РµРЅРёРµ
 
 
 void main()
@@ -13,35 +13,35 @@ void main()
 	setlocale(LC_ALL, "Rus");
 #if defined TEMPERATURE	
 	int temperature;
-	cout << "Введите температуру воздуха: "; cin >> temperature;
+	cout << "Р’РІРµРґРёС‚Рµ С‚РµРјРїРµСЂР°С‚СѓСЂСѓ РІРѕР·РґСѓС…Р°: "; cin >> temperature;
 	if (temperature > 0)
 	{
-		cout << " На улице тепло" << endl;
+		cout << " РќР° СѓР»РёС†Рµ С‚РµРїР»Рѕ" << endl;
 	}
 	else
 	{
-		cout << "На улице холодно" << endl;
+		cout << "РќР° СѓР»РёС†Рµ С…РѕР»РѕРґРЅРѕ" << endl;
 	}
 #endif //TEMPERATURE
 
 #ifdef TARGET
 	int n;
-	cout << "Введите число: "; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: "; cin >> n;
 	if (n < 0 && n < 10)
 	{
-		cout << "Цель поражена" << endl;
+		cout << "Р¦РµР»СЊ РїРѕСЂР°Р¶РµРЅР°" << endl;
 	}
 	else
 	{
-		cout << "Вы промахнулись" << endl;
+		cout << "Р’С‹ РїСЂРѕРјР°С…РЅСѓР»РёСЃСЊ" << endl;
 	}
 #endif // TARGET
 
-#if define CALC_1  // Начало блока
-	// если определено CALC_1, то нижеследующий код, до дерективы #endif, будет виден кампилятору
-	double a, b; // Числа вводимые с клавиатуры
-	char s;      // Sign - знак операции
-	cout << "Введите простое арифмитическое выражение: ";
+#if define CALC_1  // РќР°С‡Р°Р»Рѕ Р±Р»РѕРєР°
+	// РµСЃР»Рё РѕРїСЂРµРґРµР»РµРЅРѕ CALC_1, С‚Рѕ РЅРёР¶РµСЃР»РµРґСѓСЋС‰РёР№ РєРѕРґ, РґРѕ РґРµСЂРµРєС‚РёРІС‹ #endif, Р±СѓРґРµС‚ РІРёРґРµРЅ РєР°РјРїРёР»СЏС‚РѕСЂСѓ
+	double a, b; // Р§РёСЃР»Р° РІРІРѕРґРёРјС‹Рµ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
+	char s;      // Sign - Р·РЅР°Рє РѕРїРµСЂР°С†РёРё
+	cout << "Р’РІРµРґРёС‚Рµ РїСЂРѕСЃС‚РѕРµ Р°СЂРёС„РјРёС‚РёС‡РµСЃРєРѕРµ РІС‹СЂР°Р¶РµРЅРёРµ: ";
 	cin >> a >> s >> b;
 	// cout << a << s << b << endl;
 	if (s == '+')
@@ -64,7 +64,7 @@ void main()
 	{
 		cout << "Error: No operation!" << endl;
 	}
-#endif // Конец блока
+#endif // РљРѕРЅРµС† Р±Р»РѕРєР°
 
 
 }
