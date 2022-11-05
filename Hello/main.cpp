@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 void main()
 {
 	setlocale(LC_ALL, "Russian");
 	cout << "C:\\Windows\\Sistem32\\drivers\\\n";
-	cout << "\t\t\t\t\tHello World!\n Ïðèâåò Ìèð!\n";
-	cout << "Ïðèâåò \"Ìèð\"!";
+	cout << "\t\t\t\t\tHello World!\n ÐŸÑ€Ð¸Ð²ÐµÑ‚ ÐœÐ¸Ñ€!\n";
+	cout << "ÐŸÑ€Ð¸Ð²ÐµÑ‚ \"ÐœÐ¸Ñ€\"!";
 }
